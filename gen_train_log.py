@@ -31,7 +31,7 @@ def worker(iter=0.001):
 
         AVG_LOSS = float(AVG_LOSS-(rand*FORCE_AVG))
         VAL_LOSS = float(VAL_LOSS-(rand_temp*FORCE_VAL))
-        print('Epoch: {}, Avg Loss: {}, Val Loss: {} '.format(CUR_EPOCH+1, AVG_LOSS, VAL_LOSS))
+        print('Epoch: {}, Avg Loss: {}, Val Loss: {} '.format(CUR_EPOCH+1, AVG_LOSS, VAL_LOSS), flush=True)
 
         if AVG_LOSS<=(AVG_LOSS/10):
             FORCE_AVG=FORCE_AVG/10
