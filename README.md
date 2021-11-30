@@ -1,0 +1,19 @@
+# itao-demo
+`iTAO` is the GUI version for NVIDIA TAO Toolkit, and `itao-demo` is just for demonstration, any action is stimulated. 
+
+## How to run?
+```bash
+python3 app.py
+```
+
+## Initialize
+![itao_init](./figures/itao_init.gif)
+
+## Train model
+![itao_train](./figures/itao_train.gif)
+
+## Optimization
+![itao_opt](./figures/itao_opt.gif)
+
+## Inference & Export
+![itao_infer](./figures/itao_infer.gif)

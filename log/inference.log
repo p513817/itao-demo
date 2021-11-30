@@ -1,0 +1,11 @@
+[INFO] Create TensorRT Engine
+[INFO] Load Data
+[INFO] Start Inference
+"image-001.jpg":{
+    "usb":0.99,
+    "usb":0.99,
+    "usb":0.98,
+    "usb":0.96,
+    "usb":0.91
+}
+[INFO] Finished!!

@@ -1,0 +1,16 @@
+env: EPOCH=075
+2021-11-02 16:48:01,432 [INFO] root: Registry: ['nvcr.io']
+2021-11-02 16:48:01,794 [WARNING] tlt.components.docker_handler.docker_handler: 
+Docker will run the commands as root. If you would like to retain your
+local host permissions, please add the "user":"UID:GID" in the
+DockerOptions portion of the "/home/nvidia/.tao_mounts.json" file. You can obtain your
+users UID and GID by using the "id -u" and "id -g" commands on the
+terminal.
+Using TensorFlow backend.
+Using TensorFlow backend.
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+2021-11-02 08:48:15,828 [INFO] iva.common.export.keras_exporter: Using input nodes: ['Input']
+2021-11-02 08:48:15,828 [INFO] iva.common.export.keras_exporter: Using output nodes: ['BatchedNMS']
+The ONNX operator number change on the optimization: 513 -> 241
+2021-11-02 08:49:08,980 [INFO] keras2onnx: The ONNX operator number change on the optimization: 513 -> 241
+2021-11-02 16:50:27,358 [INFO] tlt.components.docker_handler.docker_handler: Stopping container.

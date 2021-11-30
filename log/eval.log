@@ -1,0 +1,451 @@
+2021-10-29 11:22:27,520 [INFO] root: Registry: ['nvcr.io']
+Using TensorFlow backend.
+Using TensorFlow backend.
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:95: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2021-10-29 03:22:38,407 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:95: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:98: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2021-10-29 03:22:38,407 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:98: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:102: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2021-10-29 03:22:38,413 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:102: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2021-10-29 03:22:41,035 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2021-10-29 03:22:41,067 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2021-10-29 03:22:41,090 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2021-10-29 03:22:41,769 [WARNING] tensorflow: From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+2021-10-29 03:22:42,003 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2021-10-29 03:22:43,076 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2021-10-29 03:22:43,076 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-10-29 03:22:43,076 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2021-10-29 03:22:44,119 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+2021-10-29 03:22:44,120 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2021-10-29 03:22:44,766 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+2021-10-29 03:22:45,580 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/common/losses/base_loss.py:40: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2021-10-29 03:22:45,665 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/common/losses/base_loss.py:40: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+2021-10-29 03:22:48,293 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2021-10-29 03:22:49,424 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+Input (InputLayer)              (None, 3, 608, 608)  0                                            
+__________________________________________________________________________________________________
+conv1 (Conv2D)                  (None, 64, 304, 304) 9408        Input[0][0]                      
+__________________________________________________________________________________________________
+bn_conv1 (BatchNormalization)   (None, 64, 304, 304) 256         conv1[0][0]                      
+__________________________________________________________________________________________________
+activation_2 (Activation)       (None, 64, 304, 304) 0           bn_conv1[0][0]                   
+__________________________________________________________________________________________________
+block_1a_conv_1 (Conv2D)        (None, 64, 152, 152) 36864       activation_2[0][0]               
+__________________________________________________________________________________________________
+block_1a_bn_1 (BatchNormalizati (None, 64, 152, 152) 256         block_1a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_1a_relu_1 (Activation)    (None, 64, 152, 152) 0           block_1a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_1a_conv_2 (Conv2D)        (None, 64, 152, 152) 36864       block_1a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_1a_conv_shortcut (Conv2D) (None, 64, 152, 152) 4096        activation_2[0][0]               
+__________________________________________________________________________________________________
+block_1a_bn_2 (BatchNormalizati (None, 64, 152, 152) 256         block_1a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_1a_bn_shortcut (BatchNorm (None, 64, 152, 152) 256         block_1a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_9 (Add)                     (None, 64, 152, 152) 0           block_1a_bn_2[0][0]              
+                                                                 block_1a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_1a_relu (Activation)      (None, 64, 152, 152) 0           add_9[0][0]                      
+__________________________________________________________________________________________________
+block_1b_conv_1 (Conv2D)        (None, 64, 152, 152) 36864       block_1a_relu[0][0]              
+__________________________________________________________________________________________________
+block_1b_bn_1 (BatchNormalizati (None, 64, 152, 152) 256         block_1b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_1b_relu_1 (Activation)    (None, 64, 152, 152) 0           block_1b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_1b_conv_2 (Conv2D)        (None, 64, 152, 152) 36864       block_1b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_1b_conv_shortcut (Conv2D) (None, 64, 152, 152) 4096        block_1a_relu[0][0]              
+__________________________________________________________________________________________________
+block_1b_bn_2 (BatchNormalizati (None, 64, 152, 152) 256         block_1b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_1b_bn_shortcut (BatchNorm (None, 64, 152, 152) 256         block_1b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_10 (Add)                    (None, 64, 152, 152) 0           block_1b_bn_2[0][0]              
+                                                                 block_1b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_1b_relu (Activation)      (None, 64, 152, 152) 0           add_10[0][0]                     
+__________________________________________________________________________________________________
+block_2a_conv_1 (Conv2D)        (None, 128, 76, 76)  73728       block_1b_relu[0][0]              
+__________________________________________________________________________________________________
+block_2a_bn_1 (BatchNormalizati (None, 128, 76, 76)  512         block_2a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_2a_relu_1 (Activation)    (None, 128, 76, 76)  0           block_2a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_2a_conv_2 (Conv2D)        (None, 128, 76, 76)  147456      block_2a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_2a_conv_shortcut (Conv2D) (None, 128, 76, 76)  8192        block_1b_relu[0][0]              
+__________________________________________________________________________________________________
+block_2a_bn_2 (BatchNormalizati (None, 128, 76, 76)  512         block_2a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_2a_bn_shortcut (BatchNorm (None, 128, 76, 76)  512         block_2a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_11 (Add)                    (None, 128, 76, 76)  0           block_2a_bn_2[0][0]              
+                                                                 block_2a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_2a_relu (Activation)      (None, 128, 76, 76)  0           add_11[0][0]                     
+__________________________________________________________________________________________________
+block_2b_conv_1 (Conv2D)        (None, 128, 76, 76)  147456      block_2a_relu[0][0]              
+__________________________________________________________________________________________________
+block_2b_bn_1 (BatchNormalizati (None, 128, 76, 76)  512         block_2b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_2b_relu_1 (Activation)    (None, 128, 76, 76)  0           block_2b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_2b_conv_2 (Conv2D)        (None, 128, 76, 76)  147456      block_2b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_2b_conv_shortcut (Conv2D) (None, 128, 76, 76)  16384       block_2a_relu[0][0]              
+__________________________________________________________________________________________________
+block_2b_bn_2 (BatchNormalizati (None, 128, 76, 76)  512         block_2b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_2b_bn_shortcut (BatchNorm (None, 128, 76, 76)  512         block_2b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_12 (Add)                    (None, 128, 76, 76)  0           block_2b_bn_2[0][0]              
+                                                                 block_2b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_2b_relu (Activation)      (None, 128, 76, 76)  0           add_12[0][0]                     
+__________________________________________________________________________________________________
+block_3a_conv_1 (Conv2D)        (None, 256, 38, 38)  294912      block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+block_3a_bn_1 (BatchNormalizati (None, 256, 38, 38)  1024        block_3a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_3a_relu_1 (Activation)    (None, 256, 38, 38)  0           block_3a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_3a_conv_2 (Conv2D)        (None, 256, 38, 38)  589824      block_3a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_3a_conv_shortcut (Conv2D) (None, 256, 38, 38)  32768       block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+block_3a_bn_2 (BatchNormalizati (None, 256, 38, 38)  1024        block_3a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_3a_bn_shortcut (BatchNorm (None, 256, 38, 38)  1024        block_3a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_13 (Add)                    (None, 256, 38, 38)  0           block_3a_bn_2[0][0]              
+                                                                 block_3a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_3a_relu (Activation)      (None, 256, 38, 38)  0           add_13[0][0]                     
+__________________________________________________________________________________________________
+block_3b_conv_1 (Conv2D)        (None, 256, 38, 38)  589824      block_3a_relu[0][0]              
+__________________________________________________________________________________________________
+block_3b_bn_1 (BatchNormalizati (None, 256, 38, 38)  1024        block_3b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_3b_relu_1 (Activation)    (None, 256, 38, 38)  0           block_3b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_3b_conv_2 (Conv2D)        (None, 256, 38, 38)  589824      block_3b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_3b_conv_shortcut (Conv2D) (None, 256, 38, 38)  65536       block_3a_relu[0][0]              
+__________________________________________________________________________________________________
+block_3b_bn_2 (BatchNormalizati (None, 256, 38, 38)  1024        block_3b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_3b_bn_shortcut (BatchNorm (None, 256, 38, 38)  1024        block_3b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_14 (Add)                    (None, 256, 38, 38)  0           block_3b_bn_2[0][0]              
+                                                                 block_3b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_3b_relu (Activation)      (None, 256, 38, 38)  0           add_14[0][0]                     
+__________________________________________________________________________________________________
+block_4a_conv_1 (Conv2D)        (None, 512, 38, 38)  1179648     block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+block_4a_bn_1 (BatchNormalizati (None, 512, 38, 38)  2048        block_4a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_4a_relu_1 (Activation)    (None, 512, 38, 38)  0           block_4a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_4a_conv_2 (Conv2D)        (None, 512, 38, 38)  2359296     block_4a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_4a_conv_shortcut (Conv2D) (None, 512, 38, 38)  131072      block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+block_4a_bn_2 (BatchNormalizati (None, 512, 38, 38)  2048        block_4a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_4a_bn_shortcut (BatchNorm (None, 512, 38, 38)  2048        block_4a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_15 (Add)                    (None, 512, 38, 38)  0           block_4a_bn_2[0][0]              
+                                                                 block_4a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_4a_relu (Activation)      (None, 512, 38, 38)  0           add_15[0][0]                     
+__________________________________________________________________________________________________
+block_4b_conv_1 (Conv2D)        (None, 512, 38, 38)  2359296     block_4a_relu[0][0]              
+__________________________________________________________________________________________________
+block_4b_bn_1 (BatchNormalizati (None, 512, 38, 38)  2048        block_4b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_4b_relu_1 (Activation)    (None, 512, 38, 38)  0           block_4b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_4b_conv_2 (Conv2D)        (None, 512, 38, 38)  2359296     block_4b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_4b_conv_shortcut (Conv2D) (None, 512, 38, 38)  262144      block_4a_relu[0][0]              
+__________________________________________________________________________________________________
+block_4b_bn_2 (BatchNormalizati (None, 512, 38, 38)  2048        block_4b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_4b_bn_shortcut (BatchNorm (None, 512, 38, 38)  2048        block_4b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_16 (Add)                    (None, 512, 38, 38)  0           block_4b_bn_2[0][0]              
+                                                                 block_4b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_4b_relu (Activation)      (None, 512, 38, 38)  0           add_16[0][0]                     
+__________________________________________________________________________________________________
+yolo_spp_pool_1 (MaxPooling2D)  (None, 512, 38, 38)  0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_pool_2 (MaxPooling2D)  (None, 512, 38, 38)  0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_pool_3 (MaxPooling2D)  (None, 512, 38, 38)  0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_concat (Concatenate)   (None, 2048, 38, 38) 0           yolo_spp_pool_1[0][0]            
+                                                                 yolo_spp_pool_2[0][0]            
+                                                                 yolo_spp_pool_3[0][0]            
+                                                                 block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_conv (Conv2D)          (None, 512, 38, 38)  1048576     yolo_spp_concat[0][0]            
+__________________________________________________________________________________________________
+yolo_spp_conv_bn (BatchNormaliz (None, 512, 38, 38)  2048        yolo_spp_conv[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_conv_lrelu (LeakyReLU) (None, 512, 38, 38)  0           yolo_spp_conv_bn[0][0]           
+__________________________________________________________________________________________________
+yolo_expand_conv1 (Conv2D)      (None, 512, 19, 19)  2359296     yolo_spp_conv_lrelu[0][0]        
+__________________________________________________________________________________________________
+yolo_expand_conv1_bn (BatchNorm (None, 512, 19, 19)  2048        yolo_expand_conv1[0][0]          
+__________________________________________________________________________________________________
+yolo_expand_conv1_lrelu (LeakyR (None, 512, 19, 19)  0           yolo_expand_conv1_bn[0][0]       
+__________________________________________________________________________________________________
+yolo_conv1_1 (Conv2D)           (None, 256, 19, 19)  131072      yolo_expand_conv1_lrelu[0][0]    
+__________________________________________________________________________________________________
+yolo_conv1_1_bn (BatchNormaliza (None, 256, 19, 19)  1024        yolo_conv1_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_1_lrelu (LeakyReLU)  (None, 256, 19, 19)  0           yolo_conv1_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_2 (Conv2D)           (None, 512, 19, 19)  1179648     yolo_conv1_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_2_bn (BatchNormaliza (None, 512, 19, 19)  2048        yolo_conv1_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_2_lrelu (LeakyReLU)  (None, 512, 19, 19)  0           yolo_conv1_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_3 (Conv2D)           (None, 256, 19, 19)  131072      yolo_conv1_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_3_bn (BatchNormaliza (None, 256, 19, 19)  1024        yolo_conv1_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_3_lrelu (LeakyReLU)  (None, 256, 19, 19)  0           yolo_conv1_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_4 (Conv2D)           (None, 512, 19, 19)  1179648     yolo_conv1_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_4_bn (BatchNormaliza (None, 512, 19, 19)  2048        yolo_conv1_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_4_lrelu (LeakyReLU)  (None, 512, 19, 19)  0           yolo_conv1_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_5 (Conv2D)           (None, 256, 19, 19)  131072      yolo_conv1_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_5_bn (BatchNormaliza (None, 256, 19, 19)  1024        yolo_conv1_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_5_lrelu (LeakyReLU)  (None, 256, 19, 19)  0           yolo_conv1_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv2 (Conv2D)             (None, 128, 19, 19)  32768       yolo_conv1_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv2_bn (BatchNormalizati (None, 128, 19, 19)  512         yolo_conv2[0][0]                 
+__________________________________________________________________________________________________
+yolo_conv2_lrelu (LeakyReLU)    (None, 128, 19, 19)  0           yolo_conv2_bn[0][0]              
+__________________________________________________________________________________________________
+upsample0 (UpSampling2D)        (None, 128, 38, 38)  0           yolo_conv2_lrelu[0][0]           
+__________________________________________________________________________________________________
+concatenate_3 (Concatenate)     (None, 384, 38, 38)  0           upsample0[0][0]                  
+                                                                 block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_conv3_1 (Conv2D)           (None, 128, 38, 38)  49152       concatenate_3[0][0]              
+__________________________________________________________________________________________________
+yolo_conv3_1_bn (BatchNormaliza (None, 128, 38, 38)  512         yolo_conv3_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_1_lrelu (LeakyReLU)  (None, 128, 38, 38)  0           yolo_conv3_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_2 (Conv2D)           (None, 256, 38, 38)  294912      yolo_conv3_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_2_bn (BatchNormaliza (None, 256, 38, 38)  1024        yolo_conv3_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_2_lrelu (LeakyReLU)  (None, 256, 38, 38)  0           yolo_conv3_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_3 (Conv2D)           (None, 128, 38, 38)  32768       yolo_conv3_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_3_bn (BatchNormaliza (None, 128, 38, 38)  512         yolo_conv3_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_3_lrelu (LeakyReLU)  (None, 128, 38, 38)  0           yolo_conv3_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_4 (Conv2D)           (None, 256, 38, 38)  294912      yolo_conv3_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_4_bn (BatchNormaliza (None, 256, 38, 38)  1024        yolo_conv3_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_4_lrelu (LeakyReLU)  (None, 256, 38, 38)  0           yolo_conv3_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_5 (Conv2D)           (None, 128, 38, 38)  32768       yolo_conv3_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_5_bn (BatchNormaliza (None, 128, 38, 38)  512         yolo_conv3_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_5_lrelu (LeakyReLU)  (None, 128, 38, 38)  0           yolo_conv3_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv4 (Conv2D)             (None, 64, 38, 38)   8192        yolo_conv3_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv4_bn (BatchNormalizati (None, 64, 38, 38)   256         yolo_conv4[0][0]                 
+__________________________________________________________________________________________________
+yolo_conv4_lrelu (LeakyReLU)    (None, 64, 38, 38)   0           yolo_conv4_bn[0][0]              
+__________________________________________________________________________________________________
+upsample1 (UpSampling2D)        (None, 64, 76, 76)   0           yolo_conv4_lrelu[0][0]           
+__________________________________________________________________________________________________
+concatenate_4 (Concatenate)     (None, 192, 76, 76)  0           upsample1[0][0]                  
+                                                                 block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_conv5_1 (Conv2D)           (None, 64, 76, 76)   12288       concatenate_4[0][0]              
+__________________________________________________________________________________________________
+yolo_conv5_1_bn (BatchNormaliza (None, 64, 76, 76)   256         yolo_conv5_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_1_lrelu (LeakyReLU)  (None, 64, 76, 76)   0           yolo_conv5_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_2 (Conv2D)           (None, 128, 76, 76)  73728       yolo_conv5_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_2_bn (BatchNormaliza (None, 128, 76, 76)  512         yolo_conv5_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_2_lrelu (LeakyReLU)  (None, 128, 76, 76)  0           yolo_conv5_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_3 (Conv2D)           (None, 64, 76, 76)   8192        yolo_conv5_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_3_bn (BatchNormaliza (None, 64, 76, 76)   256         yolo_conv5_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_3_lrelu (LeakyReLU)  (None, 64, 76, 76)   0           yolo_conv5_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_4 (Conv2D)           (None, 128, 76, 76)  73728       yolo_conv5_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_4_bn (BatchNormaliza (None, 128, 76, 76)  512         yolo_conv5_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_4_lrelu (LeakyReLU)  (None, 128, 76, 76)  0           yolo_conv5_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_5 (Conv2D)           (None, 64, 76, 76)   8192        yolo_conv5_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_5_bn (BatchNormaliza (None, 64, 76, 76)   256         yolo_conv5_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_5_lrelu (LeakyReLU)  (None, 64, 76, 76)   0           yolo_conv5_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_6 (Conv2D)           (None, 512, 19, 19)  1179648     yolo_conv1_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_6 (Conv2D)           (None, 256, 38, 38)  294912      yolo_conv3_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_6 (Conv2D)           (None, 128, 76, 76)  73728       yolo_conv5_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_6_bn (BatchNormaliza (None, 512, 19, 19)  2048        yolo_conv1_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_6_bn (BatchNormaliza (None, 256, 38, 38)  1024        yolo_conv3_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_6_bn (BatchNormaliza (None, 128, 76, 76)  512         yolo_conv5_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_6_lrelu (LeakyReLU)  (None, 512, 19, 19)  0           yolo_conv1_6_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_6_lrelu (LeakyReLU)  (None, 256, 38, 38)  0           yolo_conv3_6_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_6_lrelu (LeakyReLU)  (None, 128, 76, 76)  0           yolo_conv5_6_bn[0][0]            
+__________________________________________________________________________________________________
+conv_big_object (Conv2D)        (None, 18, 19, 19)   9234        yolo_conv1_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+conv_mid_object (Conv2D)        (None, 18, 38, 38)   4626        yolo_conv3_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+conv_sm_object (Conv2D)         (None, 18, 76, 76)   2322        yolo_conv5_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+bg_permute (Permute)            (None, 19, 19, 18)   0           conv_big_object[0][0]            
+__________________________________________________________________________________________________
+md_permute (Permute)            (None, 38, 38, 18)   0           conv_mid_object[0][0]            
+__________________________________________________________________________________________________
+sm_permute (Permute)            (None, 76, 76, 18)   0           conv_sm_object[0][0]             
+__________________________________________________________________________________________________
+bg_reshape (Reshape)            (None, 1083, 6)      0           bg_permute[0][0]                 
+__________________________________________________________________________________________________
+md_reshape (Reshape)            (None, 4332, 6)      0           md_permute[0][0]                 
+__________________________________________________________________________________________________
+sm_reshape (Reshape)            (None, 17328, 6)     0           sm_permute[0][0]                 
+__________________________________________________________________________________________________
+bg_anchor (YOLOAnchorBox)       (None, 1083, 6)      0           conv_big_object[0][0]            
+__________________________________________________________________________________________________
+bg_bbox_processor (BBoxPostProc (None, 1083, 6)      0           bg_reshape[0][0]                 
+__________________________________________________________________________________________________
+md_anchor (YOLOAnchorBox)       (None, 4332, 6)      0           conv_mid_object[0][0]            
+__________________________________________________________________________________________________
+md_bbox_processor (BBoxPostProc (None, 4332, 6)      0           md_reshape[0][0]                 
+__________________________________________________________________________________________________
+sm_anchor (YOLOAnchorBox)       (None, 17328, 6)     0           conv_sm_object[0][0]             
+__________________________________________________________________________________________________
+sm_bbox_processor (BBoxPostProc (None, 17328, 6)     0           sm_reshape[0][0]                 
+__________________________________________________________________________________________________
+encoded_bg (Concatenate)        (None, 1083, 12)     0           bg_anchor[0][0]                  
+                                                                 bg_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_md (Concatenate)        (None, 4332, 12)     0           md_anchor[0][0]                  
+                                                                 md_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_sm (Concatenate)        (None, 17328, 12)    0           sm_anchor[0][0]                  
+                                                                 sm_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_detections (Concatenate (None, 22743, 12)    0           encoded_bg[0][0]                 
+                                                                 encoded_md[0][0]                 
+                                                                 encoded_sm[0][0]                 
+__________________________________________________________________________________________________
+decoded_predictions (YOLOv4Deco (None, 22743, 5)     0           encoded_detections[0][0]         
+__________________________________________________________________________________________________
+NMS (NMSLayer)                  (None, 200, 6)       0           decoded_predictions[0][0]        
+==================================================================================================
+Total params: 20,209,910
+Trainable params: 20,187,766
+Non-trainable params: 22,144
+__________________________________________________________________________________________________
+Using TLT model for inference, setting batch size to the one in eval_config: 8
+Producing predictions: 100%|████████████████████| 38/38 [00:17<00:00,  2.16it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    1.0
+              mAP   1.0
+*******************************
+2021-10-29 11:23:16,147 [INFO] tlt.components.docker_handler.docker_handler: Stopping container.

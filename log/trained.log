@@ -1,0 +1,760 @@
+To run with multigpu, please change --gpus based on the number of available GPUs in your machine.
+2021-10-29 09:44:34,121 [INFO] root: Registry: ['nvcr.io']
+Using TensorFlow backend.
+Using TensorFlow backend.
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+Using TensorFlow backend.
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:117: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2021-10-29 01:44:43,059 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:117: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:143: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2021-10-29 01:44:43,059 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:143: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:117: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2021-10-29 01:44:43,089 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:117: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:143: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2021-10-29 01:44:43,089 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/horovod/tensorflow/__init__.py:143: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:40: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2021-10-29 01:44:43,125 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:40: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:40: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2021-10-29 01:44:43,125 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:40: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:43: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-10-29 01:44:43,125 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:43: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:43: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-10-29 01:44:43,126 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v4/scripts/train.py:43: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2021-10-29 01:44:43,704 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2021-10-29 01:44:43,706 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2021-10-29 01:44:43,719 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2021-10-29 01:44:43,721 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2021-10-29 01:44:43,729 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2021-10-29 01:44:43,747 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2021-10-29 01:44:44,478 [WARNING] tensorflow: From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2021-10-29 01:44:44,512 [WARNING] tensorflow: From /opt/nvidia/third_party/keras/tensorflow_backend.py:183: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+2021-10-29 01:44:44,768 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+2021-10-29 01:44:44,801 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+WARNING:tensorflow:From /opt/nvidia/third_party/keras/tensorflow_backend.py:187: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+2021-10-29 01:44:47,586 [WARNING] tensorflow: From /opt/nvidia/third_party/keras/tensorflow_backend.py:187: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /opt/nvidia/third_party/keras/tensorflow_backend.py:187: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+2021-10-29 01:44:47,607 [WARNING] tensorflow: From /opt/nvidia/third_party/keras/tensorflow_backend.py:187: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2021-10-29 01:44:48,011 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+2021-10-29 01:44:48,012 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2021-10-29 01:44:48,013 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+2021-10-29 01:44:48,014 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2021-10-29 01:44:48,980 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2021-10-29 01:44:48,986 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+2021-10-29 01:44:50,204 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2021-10-29 01:44:50,209 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+2021-10-29 01:44:50,212 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2021-10-29 01:44:50,217 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+2021-10-29 01:44:51,030 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+2021-10-29 01:44:51,039 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2021-10-29 01:44:51,231 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2021-10-29 01:44:51,239 [WARNING] tensorflow: From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+/usr/local/lib/python3.6/dist-packages/keras/engine/saving.py:292: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:7: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+2021-10-29 01:45:44,673 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:7: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:8: The name tf.tables_initializer is deprecated. Please use tf.compat.v1.tables_initializer instead.
+
+2021-10-29 01:45:44,674 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:8: The name tf.tables_initializer is deprecated. Please use tf.compat.v1.tables_initializer instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:9: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+2021-10-29 01:45:44,674 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:9: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+Input (InputLayer)              (None, 3, None, None 0                                            
+__________________________________________________________________________________________________
+conv1 (Conv2D)                  (None, 64, None, Non 9408        Input[0][0]                      
+__________________________________________________________________________________________________
+bn_conv1 (BatchNormalization)   (None, 64, None, Non 256         conv1[0][0]                      
+__________________________________________________________________________________________________
+activation_2 (Activation)       (None, 64, None, Non 0           bn_conv1[0][0]                   
+__________________________________________________________________________________________________
+block_1a_conv_1 (Conv2D)        (None, 64, None, Non 36864       activation_2[0][0]               
+__________________________________________________________________________________________________
+block_1a_bn_1 (BatchNormalizati (None, 64, None, Non 256         block_1a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_1a_relu_1 (Activation)    (None, 64, None, Non 0           block_1a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_1a_conv_2 (Conv2D)        (None, 64, None, Non 36864       block_1a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_1a_conv_shortcut (Conv2D) (None, 64, None, Non 4096        activation_2[0][0]               
+__________________________________________________________________________________________________
+block_1a_bn_2 (BatchNormalizati (None, 64, None, Non 256         block_1a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_1a_bn_shortcut (BatchNorm (None, 64, None, Non 256         block_1a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_9 (Add)                     (None, 64, None, Non 0           block_1a_bn_2[0][0]              
+                                                                 block_1a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_1a_relu (Activation)      (None, 64, None, Non 0           add_9[0][0]                      
+__________________________________________________________________________________________________
+block_1b_conv_1 (Conv2D)        (None, 64, None, Non 36864       block_1a_relu[0][0]              
+__________________________________________________________________________________________________
+block_1b_bn_1 (BatchNormalizati (None, 64, None, Non 256         block_1b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_1b_relu_1 (Activation)    (None, 64, None, Non 0           block_1b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_1b_conv_2 (Conv2D)        (None, 64, None, Non 36864       block_1b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_1b_conv_shortcut (Conv2D) (None, 64, None, Non 4096        block_1a_relu[0][0]              
+__________________________________________________________________________________________________
+block_1b_bn_2 (BatchNormalizati (None, 64, None, Non 256         block_1b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_1b_bn_shortcut (BatchNorm (None, 64, None, Non 256         block_1b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_10 (Add)                    (None, 64, None, Non 0           block_1b_bn_2[0][0]              
+                                                                 block_1b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_1b_relu (Activation)      (None, 64, None, Non 0           add_10[0][0]                     
+__________________________________________________________________________________________________
+block_2a_conv_1 (Conv2D)        (None, 128, None, No 73728       block_1b_relu[0][0]              
+__________________________________________________________________________________________________
+block_2a_bn_1 (BatchNormalizati (None, 128, None, No 512         block_2a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_2a_relu_1 (Activation)    (None, 128, None, No 0           block_2a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_2a_conv_2 (Conv2D)        (None, 128, None, No 147456      block_2a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_2a_conv_shortcut (Conv2D) (None, 128, None, No 8192        block_1b_relu[0][0]              
+__________________________________________________________________________________________________
+block_2a_bn_2 (BatchNormalizati (None, 128, None, No 512         block_2a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_2a_bn_shortcut (BatchNorm (None, 128, None, No 512         block_2a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_11 (Add)                    (None, 128, None, No 0           block_2a_bn_2[0][0]              
+                                                                 block_2a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_2a_relu (Activation)      (None, 128, None, No 0           add_11[0][0]                     
+__________________________________________________________________________________________________
+block_2b_conv_1 (Conv2D)        (None, 128, None, No 147456      block_2a_relu[0][0]              
+__________________________________________________________________________________________________
+block_2b_bn_1 (BatchNormalizati (None, 128, None, No 512         block_2b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_2b_relu_1 (Activation)    (None, 128, None, No 0           block_2b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_2b_conv_2 (Conv2D)        (None, 128, None, No 147456      block_2b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_2b_conv_shortcut (Conv2D) (None, 128, None, No 16384       block_2a_relu[0][0]              
+__________________________________________________________________________________________________
+block_2b_bn_2 (BatchNormalizati (None, 128, None, No 512         block_2b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_2b_bn_shortcut (BatchNorm (None, 128, None, No 512         block_2b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_12 (Add)                    (None, 128, None, No 0           block_2b_bn_2[0][0]              
+                                                                 block_2b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_2b_relu (Activation)      (None, 128, None, No 0           add_12[0][0]                     
+__________________________________________________________________________________________________
+block_3a_conv_1 (Conv2D)        (None, 256, None, No 294912      block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+block_3a_bn_1 (BatchNormalizati (None, 256, None, No 1024        block_3a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_3a_relu_1 (Activation)    (None, 256, None, No 0           block_3a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_3a_conv_2 (Conv2D)        (None, 256, None, No 589824      block_3a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_3a_conv_shortcut (Conv2D) (None, 256, None, No 32768       block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+block_3a_bn_2 (BatchNormalizati (None, 256, None, No 1024        block_3a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_3a_bn_shortcut (BatchNorm (None, 256, None, No 1024        block_3a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_13 (Add)                    (None, 256, None, No 0           block_3a_bn_2[0][0]              
+                                                                 block_3a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_3a_relu (Activation)      (None, 256, None, No 0           add_13[0][0]                     
+__________________________________________________________________________________________________
+block_3b_conv_1 (Conv2D)        (None, 256, None, No 589824      block_3a_relu[0][0]              
+__________________________________________________________________________________________________
+block_3b_bn_1 (BatchNormalizati (None, 256, None, No 1024        block_3b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_3b_relu_1 (Activation)    (None, 256, None, No 0           block_3b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_3b_conv_2 (Conv2D)        (None, 256, None, No 589824      block_3b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_3b_conv_shortcut (Conv2D) (None, 256, None, No 65536       block_3a_relu[0][0]              
+__________________________________________________________________________________________________
+block_3b_bn_2 (BatchNormalizati (None, 256, None, No 1024        block_3b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_3b_bn_shortcut (BatchNorm (None, 256, None, No 1024        block_3b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_14 (Add)                    (None, 256, None, No 0           block_3b_bn_2[0][0]              
+                                                                 block_3b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_3b_relu (Activation)      (None, 256, None, No 0           add_14[0][0]                     
+__________________________________________________________________________________________________
+block_4a_conv_1 (Conv2D)        (None, 512, None, No 1179648     block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+block_4a_bn_1 (BatchNormalizati (None, 512, None, No 2048        block_4a_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_4a_relu_1 (Activation)    (None, 512, None, No 0           block_4a_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_4a_conv_2 (Conv2D)        (None, 512, None, No 2359296     block_4a_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_4a_conv_shortcut (Conv2D) (None, 512, None, No 131072      block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+block_4a_bn_2 (BatchNormalizati (None, 512, None, No 2048        block_4a_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_4a_bn_shortcut (BatchNorm (None, 512, None, No 2048        block_4a_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_15 (Add)                    (None, 512, None, No 0           block_4a_bn_2[0][0]              
+                                                                 block_4a_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_4a_relu (Activation)      (None, 512, None, No 0           add_15[0][0]                     
+__________________________________________________________________________________________________
+block_4b_conv_1 (Conv2D)        (None, 512, None, No 2359296     block_4a_relu[0][0]              
+__________________________________________________________________________________________________
+block_4b_bn_1 (BatchNormalizati (None, 512, None, No 2048        block_4b_conv_1[0][0]            
+__________________________________________________________________________________________________
+block_4b_relu_1 (Activation)    (None, 512, None, No 0           block_4b_bn_1[0][0]              
+__________________________________________________________________________________________________
+block_4b_conv_2 (Conv2D)        (None, 512, None, No 2359296     block_4b_relu_1[0][0]            
+__________________________________________________________________________________________________
+block_4b_conv_shortcut (Conv2D) (None, 512, None, No 262144      block_4a_relu[0][0]              
+__________________________________________________________________________________________________
+block_4b_bn_2 (BatchNormalizati (None, 512, None, No 2048        block_4b_conv_2[0][0]            
+__________________________________________________________________________________________________
+block_4b_bn_shortcut (BatchNorm (None, 512, None, No 2048        block_4b_conv_shortcut[0][0]     
+__________________________________________________________________________________________________
+add_16 (Add)                    (None, 512, None, No 0           block_4b_bn_2[0][0]              
+                                                                 block_4b_bn_shortcut[0][0]       
+__________________________________________________________________________________________________
+block_4b_relu (Activation)      (None, 512, None, No 0           add_16[0][0]                     
+__________________________________________________________________________________________________
+yolo_spp_pool_1 (MaxPooling2D)  (None, 512, None, No 0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_pool_2 (MaxPooling2D)  (None, 512, None, No 0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_pool_3 (MaxPooling2D)  (None, 512, None, No 0           block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_concat (Concatenate)   (None, 2048, None, N 0           yolo_spp_pool_1[0][0]            
+                                                                 yolo_spp_pool_2[0][0]            
+                                                                 yolo_spp_pool_3[0][0]            
+                                                                 block_4b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_conv (Conv2D)          (None, 512, None, No 1048576     yolo_spp_concat[0][0]            
+__________________________________________________________________________________________________
+yolo_spp_conv_bn (BatchNormaliz (None, 512, None, No 2048        yolo_spp_conv[0][0]              
+__________________________________________________________________________________________________
+yolo_spp_conv_lrelu (LeakyReLU) (None, 512, None, No 0           yolo_spp_conv_bn[0][0]           
+__________________________________________________________________________________________________
+yolo_expand_conv1 (Conv2D)      (None, 512, None, No 2359296     yolo_spp_conv_lrelu[0][0]        
+__________________________________________________________________________________________________
+yolo_expand_conv1_bn (BatchNorm (None, 512, None, No 2048        yolo_expand_conv1[0][0]          
+__________________________________________________________________________________________________
+yolo_expand_conv1_lrelu (LeakyR (None, 512, None, No 0           yolo_expand_conv1_bn[0][0]       
+__________________________________________________________________________________________________
+yolo_conv1_1 (Conv2D)           (None, 256, None, No 131072      yolo_expand_conv1_lrelu[0][0]    
+__________________________________________________________________________________________________
+yolo_conv1_1_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv1_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_1_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv1_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_2 (Conv2D)           (None, 512, None, No 1179648     yolo_conv1_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_2_bn (BatchNormaliza (None, 512, None, No 2048        yolo_conv1_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_2_lrelu (LeakyReLU)  (None, 512, None, No 0           yolo_conv1_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_3 (Conv2D)           (None, 256, None, No 131072      yolo_conv1_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_3_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv1_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_3_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv1_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_4 (Conv2D)           (None, 512, None, No 1179648     yolo_conv1_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_4_bn (BatchNormaliza (None, 512, None, No 2048        yolo_conv1_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_4_lrelu (LeakyReLU)  (None, 512, None, No 0           yolo_conv1_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_5 (Conv2D)           (None, 256, None, No 131072      yolo_conv1_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_5_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv1_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_5_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv1_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv2 (Conv2D)             (None, 128, None, No 32768       yolo_conv1_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv2_bn (BatchNormalizati (None, 128, None, No 512         yolo_conv2[0][0]                 
+__________________________________________________________________________________________________
+yolo_conv2_lrelu (LeakyReLU)    (None, 128, None, No 0           yolo_conv2_bn[0][0]              
+__________________________________________________________________________________________________
+upsample0 (UpSampling2D)        (None, 128, None, No 0           yolo_conv2_lrelu[0][0]           
+__________________________________________________________________________________________________
+concatenate_3 (Concatenate)     (None, 384, None, No 0           upsample0[0][0]                  
+                                                                 block_3b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_conv3_1 (Conv2D)           (None, 128, None, No 49152       concatenate_3[0][0]              
+__________________________________________________________________________________________________
+yolo_conv3_1_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv3_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_1_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv3_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_2 (Conv2D)           (None, 256, None, No 294912      yolo_conv3_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_2_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv3_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_2_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv3_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_3 (Conv2D)           (None, 128, None, No 32768       yolo_conv3_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_3_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv3_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_3_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv3_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_4 (Conv2D)           (None, 256, None, No 294912      yolo_conv3_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_4_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv3_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_4_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv3_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_5 (Conv2D)           (None, 128, None, No 32768       yolo_conv3_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_5_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv3_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_5_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv3_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv4 (Conv2D)             (None, 64, None, Non 8192        yolo_conv3_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv4_bn (BatchNormalizati (None, 64, None, Non 256         yolo_conv4[0][0]                 
+__________________________________________________________________________________________________
+yolo_conv4_lrelu (LeakyReLU)    (None, 64, None, Non 0           yolo_conv4_bn[0][0]              
+__________________________________________________________________________________________________
+upsample1 (UpSampling2D)        (None, 64, None, Non 0           yolo_conv4_lrelu[0][0]           
+__________________________________________________________________________________________________
+concatenate_4 (Concatenate)     (None, 192, None, No 0           upsample1[0][0]                  
+                                                                 block_2b_relu[0][0]              
+__________________________________________________________________________________________________
+yolo_conv5_1 (Conv2D)           (None, 64, None, Non 12288       concatenate_4[0][0]              
+__________________________________________________________________________________________________
+yolo_conv5_1_bn (BatchNormaliza (None, 64, None, Non 256         yolo_conv5_1[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_1_lrelu (LeakyReLU)  (None, 64, None, Non 0           yolo_conv5_1_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_2 (Conv2D)           (None, 128, None, No 73728       yolo_conv5_1_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_2_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv5_2[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_2_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv5_2_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_3 (Conv2D)           (None, 64, None, Non 8192        yolo_conv5_2_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_3_bn (BatchNormaliza (None, 64, None, Non 256         yolo_conv5_3[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_3_lrelu (LeakyReLU)  (None, 64, None, Non 0           yolo_conv5_3_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_4 (Conv2D)           (None, 128, None, No 73728       yolo_conv5_3_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_4_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv5_4[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_4_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv5_4_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_5 (Conv2D)           (None, 64, None, Non 8192        yolo_conv5_4_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_5_bn (BatchNormaliza (None, 64, None, Non 256         yolo_conv5_5[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_5_lrelu (LeakyReLU)  (None, 64, None, Non 0           yolo_conv5_5_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv1_6 (Conv2D)           (None, 512, None, No 1179648     yolo_conv1_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv3_6 (Conv2D)           (None, 256, None, No 294912      yolo_conv3_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv5_6 (Conv2D)           (None, 128, None, No 73728       yolo_conv5_5_lrelu[0][0]         
+__________________________________________________________________________________________________
+yolo_conv1_6_bn (BatchNormaliza (None, 512, None, No 2048        yolo_conv1_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv3_6_bn (BatchNormaliza (None, 256, None, No 1024        yolo_conv3_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv5_6_bn (BatchNormaliza (None, 128, None, No 512         yolo_conv5_6[0][0]               
+__________________________________________________________________________________________________
+yolo_conv1_6_lrelu (LeakyReLU)  (None, 512, None, No 0           yolo_conv1_6_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv3_6_lrelu (LeakyReLU)  (None, 256, None, No 0           yolo_conv3_6_bn[0][0]            
+__________________________________________________________________________________________________
+yolo_conv5_6_lrelu (LeakyReLU)  (None, 128, None, No 0           yolo_conv5_6_bn[0][0]            
+__________________________________________________________________________________________________
+conv_big_object (Conv2D)        (None, 18, None, Non 9234        yolo_conv1_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+conv_mid_object (Conv2D)        (None, 18, None, Non 4626        yolo_conv3_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+conv_sm_object (Conv2D)         (None, 18, None, Non 2322        yolo_conv5_6_lrelu[0][0]         
+__________________________________________________________________________________________________
+bg_permute (Permute)            (None, None, None, 1 0           conv_big_object[0][0]            
+__________________________________________________________________________________________________
+md_permute (Permute)            (None, None, None, 1 0           conv_mid_object[0][0]            
+__________________________________________________________________________________________________
+sm_permute (Permute)            (None, None, None, 1 0           conv_sm_object[0][0]             
+__________________________________________________________________________________________________
+bg_reshape (Reshape)            (None, None, 6)      0           bg_permute[0][0]                 
+__________________________________________________________________________________________________
+md_reshape (Reshape)            (None, None, 6)      0           md_permute[0][0]                 
+__________________________________________________________________________________________________
+sm_reshape (Reshape)            (None, None, 6)      0           sm_permute[0][0]                 
+__________________________________________________________________________________________________
+bg_anchor (YOLOAnchorBox)       (None, None, 6)      0           conv_big_object[0][0]            
+__________________________________________________________________________________________________
+bg_bbox_processor (BBoxPostProc (None, None, 6)      0           bg_reshape[0][0]                 
+__________________________________________________________________________________________________
+md_anchor (YOLOAnchorBox)       (None, None, 6)      0           conv_mid_object[0][0]            
+__________________________________________________________________________________________________
+md_bbox_processor (BBoxPostProc (None, None, 6)      0           md_reshape[0][0]                 
+__________________________________________________________________________________________________
+sm_anchor (YOLOAnchorBox)       (None, None, 6)      0           conv_sm_object[0][0]             
+__________________________________________________________________________________________________
+sm_bbox_processor (BBoxPostProc (None, None, 6)      0           sm_reshape[0][0]                 
+__________________________________________________________________________________________________
+encoded_bg (Concatenate)        (None, None, 12)     0           bg_anchor[0][0]                  
+                                                                 bg_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_md (Concatenate)        (None, None, 12)     0           md_anchor[0][0]                  
+                                                                 md_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_sm (Concatenate)        (None, None, 12)     0           sm_anchor[0][0]                  
+                                                                 sm_bbox_processor[0][0]          
+__________________________________________________________________________________________________
+encoded_detections (Concatenate (None, None, 12)     0           encoded_bg[0][0]                 
+                                                                 encoded_md[0][0]                 
+                                                                 encoded_sm[0][0]                 
+==================================================================================================
+Total params: 20,209,910
+Trainable params: 20,187,766
+Non-trainable params: 22,144
+__________________________________________________________________________________________________
+/usr/local/lib/python3.6/dist-packages/keras/engine/saving.py:292: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:7: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+2021-10-29 01:45:45,211 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:7: The name tf.local_variables_initializer is deprecated. Please use tf.compat.v1.local_variables_initializer instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:8: The name tf.tables_initializer is deprecated. Please use tf.compat.v1.tables_initializer instead.
+
+2021-10-29 01:45:45,212 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:8: The name tf.tables_initializer is deprecated. Please use tf.compat.v1.tables_initializer instead.
+
+WARNING:tensorflow:From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:9: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+2021-10-29 01:45:45,212 [WARNING] tensorflow: From /root/.cache/bazel/_bazel_root/ed34e6d125608f91724fda23656f1726/execroot/ai_infra/bazel-out/k8-fastbuild/bin/magnet/packages/iva/build_wheel.runfiles/ai_infra/iva/yolo_v3/utils/tensor_utils.py:9: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+Epoch 1/200
+52928debb41f:67:139 [0] NCCL INFO Bootstrap : Using [0]lo:127.0.0.1<0> [1]eth0:172.17.0.19<0>
+52928debb41f:67:139 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+52928debb41f:67:139 [0] NCCL INFO NET/IB : No device found.
+52928debb41f:67:139 [0] NCCL INFO NET/Socket : Using [0]lo:127.0.0.1<0> [1]eth0:172.17.0.19<0>
+52928debb41f:67:139 [0] NCCL INFO Using network Socket
+NCCL version 2.7.8+cuda11.1
+52928debb41f:68:142 [1] NCCL INFO Bootstrap : Using [0]lo:127.0.0.1<0> [1]eth0:172.17.0.19<0>
+52928debb41f:68:142 [1] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+52928debb41f:68:142 [1] NCCL INFO NET/IB : No device found.
+52928debb41f:68:142 [1] NCCL INFO NET/Socket : Using [0]lo:127.0.0.1<0> [1]eth0:172.17.0.19<0>
+52928debb41f:68:142 [1] NCCL INFO Using network Socket
+52928debb41f:67:139 [0] NCCL INFO Channel 00/02 :    0   1
+52928debb41f:67:139 [0] NCCL INFO Channel 01/02 :    0   1
+52928debb41f:67:139 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/64
+52928debb41f:68:142 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/64
+52928debb41f:68:142 [1] NCCL INFO Trees [0] -1/-1/-1->1->0|0->1->-1/-1/-1 [1] -1/-1/-1->1->0|0->1->-1/-1/-1
+52928debb41f:68:142 [1] NCCL INFO Setting affinity for GPU 1 to ffff
+52928debb41f:67:139 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1|-1->0->1/-1/-1 [1] 1/-1/-1->0->-1|-1->0->1/-1/-1
+52928debb41f:67:139 [0] NCCL INFO Setting affinity for GPU 0 to ffff
+52928debb41f:68:142 [1] NCCL INFO Could not enable P2P between dev 1(=65000) and dev 0(=17000)
+52928debb41f:67:139 [0] NCCL INFO Could not enable P2P between dev 0(=17000) and dev 1(=65000)
+52928debb41f:68:142 [1] NCCL INFO Could not enable P2P between dev 1(=65000) and dev 0(=17000)
+52928debb41f:68:142 [1] NCCL INFO Channel 00 : 1[65000] -> 0[17000] via direct shared memory
+52928debb41f:67:139 [0] NCCL INFO Could not enable P2P between dev 0(=17000) and dev 1(=65000)
+52928debb41f:67:139 [0] NCCL INFO Channel 00 : 0[17000] -> 1[65000] via direct shared memory
+52928debb41f:67:139 [0] NCCL INFO Could not enable P2P between dev 0(=17000) and dev 1(=65000)
+52928debb41f:67:139 [0] NCCL INFO Could not enable P2P between dev 0(=17000) and dev 1(=65000)
+52928debb41f:67:139 [0] NCCL INFO Channel 01 : 0[17000] -> 1[65000] via direct shared memory
+52928debb41f:68:142 [1] NCCL INFO Could not enable P2P between dev 1(=65000) and dev 0(=17000)
+52928debb41f:68:142 [1] NCCL INFO Could not enable P2P between dev 1(=65000) and dev 0(=17000)
+52928debb41f:68:142 [1] NCCL INFO Channel 01 : 1[65000] -> 0[17000] via direct shared memory
+52928debb41f:67:139 [0] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+52928debb41f:67:139 [0] NCCL INFO comm 0x7fac9afaf900 rank 0 nranks 2 cudaDev 0 busId 17000 - Init COMPLETE
+52928debb41f:68:142 [1] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+52928debb41f:68:142 [1] NCCL INFO comm 0x7f780afa9500 rank 1 nranks 2 cudaDev 1 busId 65000 - Init COMPLETE
+52928debb41f:67:139 [0] NCCL INFO Launch mode Parallel
+300/300 [==============================] - 123s 411ms/step - loss: 92.9446
+Epoch 2/200
+300/300 [==============================] - 95s 316ms/step - loss: 78.6111
+Epoch 3/200
+300/300 [==============================] - 103s 344ms/step - loss: 47.4366
+Epoch 4/200
+300/300 [==============================] - 95s 315ms/step - loss: 37.9791
+Epoch 5/200
+300/300 [==============================] - 99s 331ms/step - loss: 32.2158
+Producing predictions: 100% 38/38 [00:17<00:00,  2.13it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.11224
+              mAP   0.11224
+*******************************
+Validation loss: 24.48218569437663
+
+Epoch 00005: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_005.tlt
+Epoch 6/200
+300/300 [==============================] - 93s 309ms/step - loss: 27.6310
+Epoch 7/200
+300/300 [==============================] - 103s 343ms/step - loss: 24.0999
+Epoch 8/200
+300/300 [==============================] - 95s 318ms/step - loss: 21.4658
+Epoch 9/200
+300/300 [==============================] - 102s 339ms/step - loss: 19.1085
+Epoch 10/200
+300/300 [==============================] - 97s 324ms/step - loss: 17.1592
+Producing predictions: 100% 38/38 [00:17<00:00,  2.12it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.85461
+              mAP   0.85461
+*******************************
+Validation loss: 6.386760311126709
+
+Epoch 00010: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_010.tlt
+Epoch 11/200
+300/300 [==============================] - 96s 321ms/step - loss: 15.5488
+Epoch 12/200
+300/300 [==============================] - 94s 313ms/step - loss: 14.2338
+Epoch 13/200
+300/300 [==============================] - 101s 337ms/step - loss: 13.1442
+Epoch 14/200
+300/300 [==============================] - 93s 311ms/step - loss: 12.2378
+Epoch 15/200
+300/300 [==============================] - 101s 337ms/step - loss: 11.4902
+Producing predictions: 100% 38/38 [00:14<00:00,  2.57it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.89925
+              mAP   0.89925
+*******************************
+Validation loss: 1.9277853759129842
+
+Epoch 00015: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_015.tlt
+Epoch 16/200
+300/300 [==============================] - 97s 323ms/step - loss: 10.8719
+Epoch 17/200
+300/300 [==============================] - 103s 342ms/step - loss: 10.3133
+Epoch 18/200
+300/300 [==============================] - 96s 320ms/step - loss: 9.8297
+Epoch 19/200
+300/300 [==============================] - 101s 335ms/step - loss: 9.3595
+Epoch 20/200
+300/300 [==============================] - 95s 316ms/step - loss: 8.9340
+Producing predictions: 100% 38/38 [00:16<00:00,  2.26it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.9937
+              mAP   0.9937
+*******************************
+Validation loss: 0.6598034421602885
+
+Epoch 00020: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_020.tlt
+Epoch 21/200
+300/300 [==============================] - 97s 322ms/step - loss: 8.4805
+Epoch 22/200
+300/300 [==============================] - 95s 316ms/step - loss: 8.0485
+Epoch 23/200
+300/300 [==============================] - 99s 331ms/step - loss: 7.6096
+Epoch 24/200
+300/300 [==============================] - 94s 314ms/step - loss: 7.1546
+Epoch 25/200
+300/300 [==============================] - 100s 333ms/step - loss: 6.6842
+Producing predictions: 100% 38/38 [00:14<00:00,  2.58it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.99507
+              mAP   0.99507
+*******************************
+Validation loss: 0.2833573547999064
+
+Epoch 00025: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_025.tlt
+Epoch 26/200
+300/300 [==============================] - 94s 314ms/step - loss: 6.2324
+Epoch 27/200
+300/300 [==============================] - 100s 333ms/step - loss: 5.7526
+Epoch 28/200
+300/300 [==============================] - 97s 324ms/step - loss: 5.2750
+Epoch 29/200
+300/300 [==============================] - 101s 338ms/step - loss: 4.8326
+Epoch 30/200
+300/300 [==============================] - 95s 316ms/step - loss: 4.4011
+Producing predictions: 100% 38/38 [00:16<00:00,  2.30it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.9997
+              mAP   0.9997
+*******************************
+Validation loss: 0.18534575760364533
+
+Epoch 00030: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_030.tlt
+Epoch 31/200
+300/300 [==============================] - 95s 316ms/step - loss: 4.0024
+Epoch 32/200
+300/300 [==============================] - 94s 313ms/step - loss: 3.6120
+Epoch 33/200
+300/300 [==============================] - 102s 341ms/step - loss: 3.2602
+Epoch 34/200
+300/300 [==============================] - 95s 317ms/step - loss: 2.9630
+Epoch 35/200
+300/300 [==============================] - 100s 334ms/step - loss: 2.6876
+Producing predictions: 100% 38/38 [00:13<00:00,  2.80it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    1.0
+              mAP   1.0
+*******************************
+Validation loss: 0.13969042837619783
+
+Epoch 00035: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_035.tlt
+Epoch 36/200
+300/300 [==============================] - 94s 313ms/step - loss: 2.4193
+Epoch 37/200
+300/300 [==============================] - 99s 330ms/step - loss: 2.1972
+Epoch 38/200
+300/300 [==============================] - 95s 317ms/step - loss: 2.0291
+Epoch 39/200
+300/300 [==============================] - 100s 335ms/step - loss: 1.8558
+Epoch 40/200
+300/300 [==============================] - 96s 321ms/step - loss: 1.7021
+Producing predictions: 100% 38/38 [00:15<00:00,  2.39it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    1.0
+              mAP   1.0
+*******************************
+Validation loss: 0.10594108541806539
+
+Epoch 00040: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_040.tlt
+Epoch 41/200
+300/300 [==============================] - 96s 320ms/step - loss: 1.5831
+Epoch 42/200
+300/300 [==============================] - 98s 326ms/step - loss: 1.4447
+Epoch 43/200
+300/300 [==============================] - 103s 344ms/step - loss: 1.4274
+Epoch 44/200
+300/300 [==============================] - 95s 316ms/step - loss: 1.3235
+Epoch 45/200
+300/300 [==============================] - 101s 338ms/step - loss: 1.2100
+Producing predictions: 100% 38/38 [00:13<00:00,  2.82it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    0.05734
+              mAP   0.05734
+*******************************
+Validation loss: 0.11894108541806539
+
+Epoch 00045: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_045.tlt
+Epoch 46/200
+300/300 [==============================] - 96s 320ms/step - loss: 1.1689
+Epoch 47/200
+300/300 [==============================] - 103s 344ms/step - loss: 1.0895
+Epoch 48/200
+300/300 [==============================] - 95s 318ms/step - loss: 1.0391
+Epoch 49/200
+300/300 [==============================] - 102s 341ms/step - loss: 1.0362
+Epoch 50/200
+300/300 [==============================] - 96s 322ms/step - loss: 0.9457
+Producing predictions: 100% 38/38 [00:16<00:00,  2.34it/s]
+Start to calculate AP for each class
+*******************************
+usb           AP    1.0
+              mAP   1.0
+*******************************
+Validation loss: 0.12706187685330708
+
+Epoch 00050: saving model to /workspace/tao-experiments/yolo_v4/experiment_dir_unpruned/weights/yolov4_resnet18_epoch_050.tlt
