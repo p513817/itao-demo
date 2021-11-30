@@ -54,37 +54,37 @@ with open(log_file) as log:
                 val_nums = val_nums + 1 if i==None else 0
             
             if avg_nums == 0:
-                if args.debug: print(avg)
+                if args.debug: print(avg, flush=True)
                 for key in avg.keys():
                     avg[key] = None
 
             if val_nums == 0:
-                if args.debug: print(val)
+                if args.debug: print(val, flush=True)
                 for key in val.keys():
                     val[key] = None
 
-            if not args.debug: print(line)
+            if not args.debug: print(line, flush=True)
         elif args.mode=='eval':
-            if not args.debug: print(line)
+            if not args.debug: print(line, flush=True)
             else:
                 if '*******************************' in line:
                     flag = not flag
                 else:
                     if flag:
-                        print(line)
+                        print(line, flush=True)
         elif args.mode=='prune':
             if not args.debug: 
-                print(line)
+                print(line, flush=True)
                 if 'INFO' in line:
                     time.sleep(1)
         elif args.mode=='export':
             if not args.debug: 
-                print(line)
+                print(line, flush=True)
                 if 'INFO' in line:
                     time.sleep(1)
         elif args.mode=='infer':
             if not args.debug:
-                print(line)
+                print(line, flush=True)
                 if "Start Inference" in line:
                     time.sleep(2)
         else:

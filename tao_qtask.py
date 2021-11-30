@@ -12,8 +12,9 @@ class TAO_Train(QThread):
         self.nums = 0
 
     def run(self):
+        
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "train"], stdout=subprocess.PIPE)
+            proc = subprocess.Popen(["python3", "read_log.py", "train"], stdout=subprocess.PIPE)    
             for line in proc.stdout:
                 line = line.decode("utf-8").rstrip('\n')
                 self.nums = 0

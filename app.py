@@ -182,8 +182,8 @@ class UI(QtWidgets.QMainWindow):
     """ 初始化 Console """
     def init_console(self):
         self.consoles[self.current_page_id].clear()    
-        self.pws[self.current_page_id].show()
         if self.current_page_id in [1,2]:
+            self.pws[self.current_page_id].show()
             self.pws[self.current_page_id].clear()
             if self.current_page_id==1: [val.clear() for _, val in self.t2_var.items() ]
             if self.current_page_id==2: [val.clear() for _, val in self.t3_var.items() ]
@@ -299,16 +299,15 @@ class UI(QtWidgets.QMainWindow):
     def load_result(self):
         # 更新大小，在這裡更新才會是正確的大小
         self.frame_size = self.t4_frame.width() if self.t4_frame.width()<self.t4_frame.height() else self.t4_frame.height()
-        # 更新路徑        
-        trg_folder = INFER_IMG_ROOT if self.saving_folder==None else self.saving_folder
+        
         # 把所有的檔案給 Load 進 ls_infer_name
         self.cur_pixmap = 0
         for file in self.infer_files:
             base_name = os.path.basename(file)
             # 儲存名稱的相對路徑
-            self.ls_infer_name.append(os.path.join( trg_folder, base_name ))
+            self.ls_infer_name.append(os.path.join( INFER_IMG_ROOT, base_name ))
             # 儲存標籤檔的相對路徑
-            label_name = os.path.splitext(os.path.join( trg_folder, base_name ))[0]+'.txt'
+            label_name = os.path.splitext(os.path.join( INFER_LBL_ROOT, base_name ))[0]+'.txt'
             with open(label_name, 'r') as lbl:
                 content = lbl.readlines()
                 self.ls_infer_label.append(content)
@@ -352,6 +351,7 @@ class UI(QtWidgets.QMainWindow):
         self.ui.t3_bt_pruned.setEnabled(False)
         self.ui.t3_bt_stop.setEnabled(True)
 
+        self.init_plot(self.current_page_id, xlabel="ID", ylabel="MB")
         self.init_console()
         self.update_prune_conf()
         self.insert_text("Start Pruning Model ... ")
@@ -397,8 +397,8 @@ class UI(QtWidgets.QMainWindow):
         self.ui.t3_bt_retrain.setEnabled(False)
         self.ui.t3_bt_stop.setEnabled(True)
         self.update_retrain_conf()
-        self.init_console()
         self.init_plot()
+        self.init_console()
         self.pws[self.current_page_id].setXRange(0, int(RETRAIN_CONF['epoch']), 0.05)
         self.insert_text("Start Re-Train Model ... ")
         self.worker_retrain = TAO_RETRAIN(int(RETRAIN_CONF['epoch']))
