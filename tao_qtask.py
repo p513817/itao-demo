@@ -12,13 +12,14 @@ class TAO_Train(QThread):
         self.nums = 0
 
     def run(self):
-        
+        proc = subprocess.Popen(["python3", "read_log.py", "train"], stdout=subprocess.PIPE)    
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "train"], stdout=subprocess.PIPE)    
+            if proc.poll() is not None:
+                self.flag = False
+                break
             for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n')
+                line = line.decode("utf-8", "ignore").rstrip('\n')
                 self.nums = 0
-                
                 if 'Epoch ' in line:
                     line_cnt = line.split(' ')
                     if len(line_cnt)==2:  
@@ -40,11 +41,8 @@ class TAO_Train(QThread):
                     self.trigger.emit(self.data)
                     if self.nums>=3:
                         self.data = {'epoch':None, 'avg_loss':None, 'val_loss':None}
-
-            if proc.poll() is not None:
-                self.trigger.emit({})
-                self.flag = False
-                break
+        self.trigger.emit({})    
+            
     def stop(self):
         self.flag=False
 
@@ -59,18 +57,19 @@ class TAO_VAL(QThread):
         self.sym = '*******************************'
 
     def run(self):
+        proc = subprocess.Popen(["python3", "read_log.py", "eval"], stdout=subprocess.PIPE)
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "eval"], stdout=subprocess.PIPE)
+            if proc.poll() is not None:
+                self.flag = False
+                break
             for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n')
+                line = line.decode("utf-8", "ignore").rstrip('\n')
                 if self.sym in line: 
                     self.trg = not self.trg
                 else:
                     if self.trg: self.trigger.emit(line)
-            if proc.poll() is not None:
-                self.trigger.emit("end")
-                self.flag = False
-                break
+        self.trigger.emit("end")
+
     def stop(self):
         self.flag=False
 
@@ -83,18 +82,18 @@ class TAO_PRUNE(QThread):
         self.flag = True  
 
     def run(self):
+        proc = subprocess.Popen(["python3", "read_log.py", "prune"], stdout=subprocess.PIPE)
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "prune"], stdout=subprocess.PIPE)
-            for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n')
-                if "[INFO]" in line:
-                    self.trigger.emit(line)
-
             if proc.poll() is not None:
-                self.trigger.emit("end")
                 self.flag = False
                 break
-            
+            else:
+                for line in proc.stdout:
+                    line = line.decode("utf-8").rstrip('\n')
+                    if "[INFO]" in line:
+                        self.trigger.emit(line)
+        self.trigger.emit("end")
+        
     def stop(self):
         self.flag=False
 
@@ -111,10 +110,13 @@ class TAO_INFER(QThread):
         self.trg = False
         self.cur_name = ""
     def run(self):
+        proc = subprocess.Popen(["python3", "read_log.py", "infer"], stdout=subprocess.PIPE)
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "infer"], stdout=subprocess.PIPE)
+            if proc.poll() is not None:
+                self.flag = False
+                break
             for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n').strip()
+                line = line.decode("utf-8", "ignore").rstrip('\n').strip()
                 # print(line)
                 if "[INFO]" in line:
                     self.info.emit(line)
@@ -129,11 +131,8 @@ class TAO_INFER(QThread):
                 else:
                     if self.trg:
                         self.data[self.cur_name].append(line.rstrip(" ").rstrip(","))
-                        
-            if proc.poll() is not None:
-                self.trigger.emit({})
-                self.flag = False
-                break
+        self.trigger.emit({})
+
     def stop(self):
         self.flag=False
 
@@ -149,21 +148,21 @@ class TAO_RETRAIN(QThread):
         self.nums = 0     
 
     def run(self):
+        proc = subprocess.Popen(["python3", "gen_train_log.py", "-e", f"{self.epoch}"], stdout=subprocess.PIPE)
         while(self.flag):
-            proc = subprocess.Popen(["python3", "gen_train_log.py", "-e", f"{self.epoch}"], stdout=subprocess.PIPE)
+            if proc.poll() is not None:
+                self.flag = False
+                break
             for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n')
+                line = line.decode("utf-8", "ignore").rstrip('\n')
                 _epoch, _avg, _val = line.split(',')
                 self.data['epoch'] = int(_epoch.split(': ')[1])
                 self.data['avg_loss'] = float(_avg.split(': ')[1])
                 self.data['val_loss'] = float(_val.split(': ')[1])
                 
                 self.trigger.emit(self.data)
+        self.trigger.emit({})
 
-            if proc.poll() is not None:
-                self.trigger.emit({})
-                self.flag = False
-                break
     def stop(self):
         self.flag=False
 
@@ -176,18 +175,17 @@ class TAO_EXPORT(QThread):
         self.flag = True  
 
     def run(self):
+        proc = subprocess.Popen(["python3", "read_log.py", "export"], stdout=subprocess.PIPE)
         while(self.flag):
-            proc = subprocess.Popen(["python3", "read_log.py", "export"], stdout=subprocess.PIPE)
-            for line in proc.stdout:
-                line = line.decode("utf-8").rstrip('\n')
-                if "[INFO]" in line:
-                    self.trigger.emit(line)
-
             if proc.poll() is not None:
-                self.trigger.emit("end")
                 self.flag = False
                 break
-            
+            for line in proc.stdout:
+                line = line.decode("utf-8", "ignore").rstrip('\n')
+                if "[INFO]" in line:
+                    self.trigger.emit(line)
+        self.trigger.emit("end")
+
     def stop(self):
         self.flag=False
 

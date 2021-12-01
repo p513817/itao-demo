@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import PyQt5
 from PyQt5 import QtWidgets, QtGui, uic,QtCore
-from PyQt5.QtWidgets import QFileDialog, QVBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QVBoxLayout, QApplication
 import sys
 import time
 import os
@@ -131,7 +131,7 @@ class UI(QtWidgets.QMainWindow):
 
     """ 取得資料夾路徑 """
     def get_folder(self):
-        folder_path = QFileDialog.getExistingDirectory(self, "Open folder", "./")
+        folder_path = QFileDialog.getExistingDirectory(self, "Open folder", "./", options=QFileDialog.DontUseNativeDialog)
         if self.current_page_id==0:
             TRAIN_CONF['dataset_path'] = folder_path
             self.sel_idx[4]=1 
@@ -141,7 +141,7 @@ class UI(QtWidgets.QMainWindow):
             
     """ 取得檔案路徑 """
     def get_file(self):
-        filename, filetype = QFileDialog.getOpenFileNames(self, "Open file", "./")
+        filename, filetype = QFileDialog.getOpenFileNames(self, "Open file", "./", options =QFileDialog.DontUseNativeDialog)
         if self.current_page_id==0:
             TRAIN_CONF['label_path'] = filename
             self.sel_idx[5]=1
