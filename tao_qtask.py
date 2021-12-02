@@ -1,5 +1,6 @@
-from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt5.QtCore import QThread, flush, pyqtSignal
 import subprocess
+import time
 
 class TAO_Train(QThread):
 
@@ -9,38 +10,50 @@ class TAO_Train(QThread):
         super(TAO_Train, self).__init__()
         self.flag = True        
         self.data = {'epoch':None, 'avg_loss':None, 'val_loss':None}
-        self.nums = 0
+
+    def check_epoch_in_line(self, line):
+        if 'Epoch ' in line:
+                line_cnt = line.split(' ')
+                if len(line_cnt)==2:  
+                    self.data['epoch'] = int(line_cnt[1].split('/')[0])
+                    return 1
+                else: 
+                    return 0
+        return 0
+    
+    def check_loss_in_line(self, line):
+        if 'loss: ' in line:
+            if 'Validation' in line:           
+                self.data['val_loss']= round(float( line.split('loss: ')[1]), 3)                   
+                return 1
+            self.data['avg_loss']= round(float( line.split('loss: ')[1]), 3)
+            return 1
+        else:
+            return 0
 
     def run(self):
         proc = subprocess.Popen(["python3", "read_log.py", "train"], stdout=subprocess.PIPE)    
+        
         while(self.flag):
+
             if proc.poll() is not None:
                 self.flag = False
                 break
             for line in proc.stdout:
+                
                 line = line.decode("utf-8", "ignore").rstrip('\n')
-                self.nums = 0
-                if 'Epoch ' in line:
-                    line_cnt = line.split(' ')
-                    if len(line_cnt)==2:  
-                        self.data['epoch'] = int(line_cnt[1].split('/')[0])
+                
+                if self.check_epoch_in_line(line):
                     continue
-                elif 'loss: ' in line:
-                    if 'Validation' in line:           
-                        self.data['val_loss']= round(float( line.split('loss: ')[1]), 3)                   
-                    else:
-                        self.data['avg_loss']= round(float( line.split('loss: ')[1]), 3)
-                else:
-                    continue
+                
+                if self.check_loss_in_line(line):
 
-                for i in self.data.values():
-                    if i == None:continue
-                    self.nums = self.nums + 1 
+                    if self.data['epoch'] != None and self.data['avg_loss'] != None:
+                        self.trigger.emit(self.data)
+                        time.sleep(0.001)  
+                        if self.data['val_loss'] != None:
+                            self.data = {'epoch':None, 'avg_loss':None, 'val_loss':None}
 
-                if self.nums>=2:
-                    self.trigger.emit(self.data)
-                    if self.nums>=3:
-                        self.data = {'epoch':None, 'avg_loss':None, 'val_loss':None}
         self.trigger.emit({})    
             
     def stop(self):
