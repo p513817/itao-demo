@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import PyQt5
 from PyQt5 import QtWidgets, QtGui, uic,QtCore
-from PyQt5.QtWidgets import QFileDialog, QVBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QVBoxLayout, QApplication
 import sys
 import time
 import os
@@ -23,7 +23,8 @@ MODEL_ROOT = './model'
 PRUNED_ROOT = './pruned'
 INFER_IMG_ROOT = './infer_images'
 INFER_LBL_ROOT = './infer_labels'
-
+DEBUG_MODE=True if len(sys.argv)>=2 and sys.argv[1].lower()=='debug' else False
+        
 class UI(QtWidgets.QMainWindow):
 
     ####################################################################################################
@@ -38,7 +39,7 @@ class UI(QtWidgets.QMainWindow):
         self.end_page_id = 3    # 4-1 = 0
         
         """ 將元件統一 """
-        font = QtGui.QFont("Consolas", 10)
+        font = QtGui.QFont("Arial", 12)
         self.ui.setFont(font)
         self.space = len('learning_rate') # get longest width in console
         self.page_buttons_status={0:[0,0], 1:[1,0], 2:[1,0], 3:[1,0]}
@@ -46,12 +47,14 @@ class UI(QtWidgets.QMainWindow):
         self.progress = [ self.ui.t1_progress, self.ui.t2_progress, self.ui.t3_progress, self.ui.t4_progress]
         self.frames = [None, self.ui.t2_frame, self.ui.t3_frame, None]
         self.consoles = [ self.ui.t1_console, self.ui.t2_console, self.ui.t3_console, self.ui.t4_console]
-        [ self.tabs[i].setEnabled(True) for i in range(len(self.tabs))] # This is for debug
+
+        [ self.ui.main_tab.setTabEnabled(i, True if DEBUG_MODE else False) for i in range(len(self.tabs))] # This is for debug
 
         """ 建立 & 初始化 Tab2 跟 Tab3 的圖表 """
         self.pws = [None, pg.PlotWidget(self), pg.PlotWidget(self), None]
         self.pw_lyrs = [None, QVBoxLayout(), QVBoxLayout(), None]
-        [ self.init_plot(i) for i in range(1,3) ]
+        [ a.hide() for a in self.pws if a!=None ]    # 先關閉等待 init_console 的時候才開
+        # [ self.init_plot(i) for i in range(1,3) ]
 
         """ 設定 Previous、Next 的按鈕 """
         self.current_page_id = self.first_page_id
@@ -107,10 +110,9 @@ class UI(QtWidgets.QMainWindow):
         self.precision_radio = {"INT8":self.t4_int8, "FP16":self.t4_fp16, "FP32":self.t4_fp32}
         
         self.worker_infer, self.export_name, self.precision = None, None, None
-        self.infer_files, self.saving_folder = None, None
+        self.infer_files = None
 
         self.ui.t4_bt_upload.clicked.connect(self.get_file)
-        self.ui.t4_bt_savepath.clicked.connect(self.get_folder)
 
         self.t4_bt_infer.clicked.connect(self.t4_infer_event)
         self.t4_bt_export.clicked.connect(self.export_event)
@@ -131,17 +133,16 @@ class UI(QtWidgets.QMainWindow):
 
     """ 取得資料夾路徑 """
     def get_folder(self):
-        folder_path = QFileDialog.getExistingDirectory(self, "Open folder", "./")
+        folder_path = QFileDialog.getExistingDirectory(self, "Open folder", "./", options=QFileDialog.DontUseNativeDialog)
         if self.current_page_id==0:
             TRAIN_CONF['dataset_path'] = folder_path
             self.sel_idx[4]=1 
             self.update_progress(self.current_page_id, self.sel_idx.count(1), len(self.t1_objects))
-        elif self.current_page_id==3:
-            self.saving_folder = folder_path
+        
             
     """ 取得檔案路徑 """
     def get_file(self):
-        filename, filetype = QFileDialog.getOpenFileNames(self, "Open file", "./")
+        filename, filetype = QFileDialog.getOpenFileNames(self, "Open file", "./", options =QFileDialog.DontUseNativeDialog)
         if self.current_page_id==0:
             TRAIN_CONF['label_path'] = filename
             self.sel_idx[5]=1
@@ -153,8 +154,12 @@ class UI(QtWidgets.QMainWindow):
     def update_page_button(self):
         idx = self.ui.main_tab.currentIndex()
         self.current_page_id = idx
+        self.ui.main_tab.setTabEnabled(self.current_page_id, True)
         self.bt_previous.setEnabled(self.page_buttons_status[self.current_page_id][0])
         self.bt_next.setEnabled(self.page_buttons_status[self.current_page_id][1])
+        if self.current_page_id==self.end_page_id:
+            self.bt_next.setText('Close')
+            self.swith_page_button(True)
     
     """ 更新頁面的事件 next, previous 按鈕 """
     def ctrl_page_event(self):
@@ -163,6 +168,8 @@ class UI(QtWidgets.QMainWindow):
             if self.current_page_id < self.end_page_id :
                 self.current_page_id = self.current_page_id + 1
                 self.ui.main_tab.setCurrentIndex(self.current_page_id)
+        elif trg=="close":
+            self.ui.close()
         else:   # previous
             if self.current_page_id > self.first_page_id :
                 self.current_page_id = self.current_page_id - 1
@@ -177,7 +184,13 @@ class UI(QtWidgets.QMainWindow):
         self.pws[idx].setLabel("bottom", xlabel)
         self.frames[idx].setLayout(self.pw_lyrs[idx])
         self.pw_lyrs[idx].addWidget(self.pws[idx])
-        self.pws[idx].hide()                            # 先關閉等待 init_console 的時候才開
+        if idx==2:
+            if ylabel=="MB":
+                self.pws[idx].setXRange(0, 5)
+            else:
+                self.pws[idx].setXRange(0, int(RETRAIN_CONF['epoch']), 0.05)
+        elif idx==1:
+            self.pws[idx].setXRange(0, int(TRAIN_CONF['epoch']), 0.05)
 
     """ 初始化 Console """
     def init_console(self):
@@ -259,7 +272,6 @@ class UI(QtWidgets.QMainWindow):
         self.worker_infer.info.connect(self.update_infer_log)
         self.init_console()
         self.insert_text("Start Inference ... ")
-        self.consoles[self.current_page_id].insertPlainText(f"Saving Path: {self.saving_folder}\n")
         self.consoles[self.current_page_id].insertPlainText(f"Input Data: {self.infer_files}\n")
 
     """ T4 -> 更新 Inference 的資訊 """
@@ -308,10 +320,12 @@ class UI(QtWidgets.QMainWindow):
             self.ls_infer_name.append(os.path.join( INFER_IMG_ROOT, base_name ))
             # 儲存標籤檔的相對路徑
             label_name = os.path.splitext(os.path.join( INFER_LBL_ROOT, base_name ))[0]+'.txt'
+            
             with open(label_name, 'r') as lbl:
+                result = []
                 content = lbl.readlines()
-                self.ls_infer_label.append(content)
-        # show first one
+                [ result.append(cnt) for cnt in content if float(cnt.split(' ')[-1]) > self.t4_thres.value() ]
+                self.ls_infer_label.append(result)
         self.cur_pixmap = 0
         self.show_result()
     
@@ -320,8 +334,7 @@ class UI(QtWidgets.QMainWindow):
         if data != "end":
             self.consoles[self.current_page_id].insertPlainText(f"{data}\n")
             self.mv_last_line()
-            for key in self.export_log_key:
-                if key in data: self.update_progress(self.current_page_id, self.export_log_key.index(key)+1, len(self.export_log_key))  
+            [ self.update_progress(self.current_page_id, self.export_log_key.index(key)+1, len(self.export_log_key))  for key in self.export_log_key if key in data ]  
         else:
             self.insert_text("Export ... finished !!! ")
             self.worker_export.quit()
@@ -350,10 +363,9 @@ class UI(QtWidgets.QMainWindow):
         self.swith_page_button(False)
         self.ui.t3_bt_pruned.setEnabled(False)
         self.ui.t3_bt_stop.setEnabled(True)
-
-        self.init_plot(self.current_page_id, xlabel="ID", ylabel="MB")
-        self.init_console()
         self.update_prune_conf()
+        self.init_plot(xlabel="ID", ylabel="MB")
+        self.init_console()
         self.insert_text("Start Pruning Model ... ")
         self.worker_prune = TAO_PRUNE()
         self.worker_prune.start()
@@ -399,7 +411,7 @@ class UI(QtWidgets.QMainWindow):
         self.update_retrain_conf()
         self.init_plot()
         self.init_console()
-        self.pws[self.current_page_id].setXRange(0, int(RETRAIN_CONF['epoch']), 0.05)
+        
         self.insert_text("Start Re-Train Model ... ")
         self.worker_retrain = TAO_RETRAIN(int(RETRAIN_CONF['epoch']))
         self.worker_retrain.start()
@@ -479,12 +491,13 @@ class UI(QtWidgets.QMainWindow):
     """ T2 -> 當按下 train 按鈕的時候進行的事件 """
     def t2_train_event(self):
         self.update_train_conf()
+        self.init_plot()
         self.init_console()
-        self.pws[self.current_page_id].setXRange(0, int(TRAIN_CONF['epoch']), 0.05)
         self.insert_text("Start Training Model ...")
         self.worker = TAO_Train()
-        self.worker.start()
         self.worker.trigger.connect(self.update_t2_train_log)
+        self.worker.start()
+        
         self.ui.t2_bt_train.setEnabled(False)
         self.ui.t2_bt_stop.setEnabled(True)
     
@@ -520,28 +533,30 @@ class UI(QtWidgets.QMainWindow):
                 self.t2_var["avg_epoch"].append(cur_epoch)
                 self.t2_var["avg_loss"].append(avg_loss)
             
-            if cur_epoch%5==0 and val_loss==None: 
-                pass
-            else:
-                log = "{} {} {}\n".format(  f'[{cur_epoch:03}/{max_epoch:03}]',
-                                            f'AVG_LOSS: {avg_loss:06.3f}',
-                                            f'VAL_LOSS: {val_loss:06.3f}' if val_loss is not None else ' ')
+            log = "{} {} {}\n".format(  f'[{cur_epoch:03}/{max_epoch:03}]',
+                                        f'AVG_LOSS: {avg_loss:06.3f}',
+                                        f'VAL_LOSS: {val_loss:06.3f}' if val_loss is not None else ' ')
 
-                self.pws[self.current_page_id].clear()                                                  # 清除 Plot
-                self.consoles[self.current_page_id].insertPlainText(log)                                # 插入內容
-                self.mv_last_line()
+            self.pws[self.current_page_id].clear()                                                  # 清除 Plot
+            self.consoles[self.current_page_id].insertPlainText(log)                                # 插入內容
+            self.mv_last_line()
 
-                self.pws[self.current_page_id].plot(self.t2_var["avg_epoch"], self.t2_var["avg_loss"], pen=pg.mkPen('r', width=2), name="average loss")
-                self.pws[self.current_page_id].plot(self.t2_var["val_epoch"], self.t2_var["val_loss"], pen=pg.mkPen('b', width=2), name="validation loss")
-                self.update_progress(self.current_page_id, cur_epoch, max_epoch)
+            self.pws[self.current_page_id].plot(self.t2_var["avg_epoch"], self.t2_var["avg_loss"], pen=pg.mkPen('r', width=2), name="average loss")
+            self.pws[self.current_page_id].plot(self.t2_var["val_epoch"], self.t2_var["val_loss"], pen=pg.mkPen('b', width=2), name="validation loss")
+            self.update_progress(self.current_page_id, cur_epoch, max_epoch)
         else:
             self.insert_text("Training Model ... Finished !!!")
             self.ui.t2_bt_train.setEnabled(True)
             self.worker.quit()
             self.insert_text("Start Evaluating Model ...")
-            self.worker_eval = TAO_VAL()
-            self.worker_eval.start()
-            self.worker_eval.trigger.connect(self.update_t2_eval_log)
+            self.init_plot()
+            self.eval_event()
+
+    def eval_event(self):
+        self.worker_eval = TAO_VAL()
+        self.worker_eval.start()
+        self.worker_eval.trigger.connect(self.update_t2_eval_log)
+
 
     """ T2 -> 將 t2 的資訊映射到 TRAIN_CONF 上 """
     def update_train_conf(self):
