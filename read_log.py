@@ -17,7 +17,7 @@ elif args.mode=='infer':
 elif args.mode=='export':
     log_file = './log/export.log'
 
-with open(log_file,"r", encoding="utf-8") as log:
+with open(log_file) as log:
     lines = log.readlines()
     cost_time = 1
     flag = False
@@ -63,11 +63,9 @@ with open(log_file,"r", encoding="utf-8") as log:
                 for key in val.keys():
                     val[key] = None
 
-            if not args.debug: 
-                print(line, flush=True)
+            if not args.debug: print(line, flush=True)
         elif args.mode=='eval':
-            if not args.debug: 
-                print(line, flush=True)
+            if not args.debug: print(line, flush=True)
             else:
                 if '*******************************' in line:
                     flag = not flag
